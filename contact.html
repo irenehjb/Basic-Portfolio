@@ -1,42 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./assets/css/styyle.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="header">
-            <a id="name">Irene Bang</a>
-            <div class="header-right">
-                <a class="contat" href="./contact.html">Contact</a>
-                <a href="./portfolio.html">Portfolio</a>
+    <header id="mainheader">
+        <div class="container">
+            <a href="index.html" id="logo">Irene Bang</a>
+            <nav>
                 <a href="./index.html">About</a>
-            </div>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
         </div>
-        <div id="container">
-            <div class="contact">
-                <h2 class="page-header">Contact</h2>
-                <form action="/action_page.php">
-                    <label for="boxname" id="contactinfo">Name</label>
-                    <input type="text" id="boxname" name="fullname" placeholder="John Smith">
 
-                    <label for="boxemail" id="contactinfo">Email</label>
-                    <input type="text" id="boxemail" name="email" placeholder="example@gmail.com">
+    </header>>
+    <div id="body-container" class="container">
+        <section class="body-container">
+            <h1>Contact</h1>
 
-                    <label for="boxmessage" id="contactinfo">Message</label>
-                    <textarea id="boxmessage" name="message" style="height:200px"></textarea>
+            <form id="contact-info">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="Submit">
+            </form>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
     </div>
+
+    <footer>
+        <div class="container">
+            Copyright&copy;
+    </footer>
 </body>
 
 </html>
